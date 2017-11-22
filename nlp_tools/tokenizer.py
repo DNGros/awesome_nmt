@@ -10,11 +10,12 @@ from __future__ import division
 from __future__ import print_function
 
 import re, sys
+sys.path.insert(0,".")
 if sys.version_info > (3, 0):
     from six.moves import xrange
 
-from . import constants, ner
-from .spellcheck import spell_check as spc
+import constants, ner
+from spellcheck import spell_check as spc
 
 # from nltk.stem.wordnet import WordNetLemmatizer
 # lmtzr = WordNetLemmatizer()
