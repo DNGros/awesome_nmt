@@ -9,13 +9,17 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import re, sys
-sys.path.insert(0,".")
+import re, sys, os
+sys.path.insert(0, os.getcwd())
 if sys.version_info > (3, 0):
     from six.moves import xrange
 
+from . import constants, ner
+from .spellcheck import spell_check as spc
 import constants, ner
-from spellcheck import spell_check as spc
+
+#import constants, ner
+#from spellcheck import spell_check as spc
 
 # from nltk.stem.wordnet import WordNetLemmatizer
 # lmtzr = WordNetLemmatizer()
