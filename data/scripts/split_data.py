@@ -11,6 +11,7 @@ import re
 import os, sys
 sys.path.append("..")
 sys.path.append("../../")
+sys.path.append("../../nlp_tools")
 sys.path.append("../../bashlint")
 
 from nlp_tools.tokenizer import basic_tokenizer, ner_tokenizer
