@@ -10,16 +10,16 @@ from __future__ import division
 from __future__ import print_function
 
 import re, sys, os
-sys.path.insert(0, os.getcwd())
+sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
 if sys.version_info > (3, 0):
     from six.moves import xrange
 
-from . import constants, ner
-from .spellcheck import spell_check as spc
+#from . import constants, ner
+#from .spellcheck import spell_check as spc
 import constants, ner
 
 #import constants, ner
-#from spellcheck import spell_check as spc
+from spellcheck import spell_check as spc
 
 # from nltk.stem.wordnet import WordNetLemmatizer
 # lmtzr = WordNetLemmatizer()
