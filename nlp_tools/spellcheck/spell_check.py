@@ -38,7 +38,8 @@ def extract_top_frequent_words(input, top_k):
 
 def P(word, N=sum(WORDS.values())):
     "Probability of `word`."
-    return 0 if N is 0 else WORDS[word] / (N+0.0)
+    #return 0 if N is 0 else WORDS[word] / (N+0.0)
+    return WORDS[word] / (N+0.0)
 
 def correction(word):
     "Most probable spelling correction for word."
